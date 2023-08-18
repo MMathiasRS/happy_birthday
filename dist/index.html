@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <div class="container">
+          <p>happy birthday <br><span id="time"></span></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="event event__bg01">
+        <div class="container" data-aos="zoom-in-down">
+          <div class="event_text">
+            <h2>Marcos matias</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos
+              quo sequi sunt, perferendis illum omnis! Molestias perspiciatis,
+              dolor officiis fugit ratione, aperiam rem praesentium ad, quas vel
+              aut amet.
+            </p>
+          </div>
+          <img src="/286881.edbc77e1.jpg" width="360px">
+        </div>
+      </section>
+
+      <section class="event event__bg02">
+        <div class="container" data-aos="zoom-in-down">
+          <img src="/286881.edbc77e1.jpg" width="360px">
+          <div class="event_text">
+            <h2>HAPPY BIRTHDAY xx/xx/xxxx</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos
+              quo sequi sunt, perferendis illum omnis! Molestias perspiciatis,
+              dolor officiis fugit ratione, aperiam rem praesentium ad, quas vel
+              aut amet.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="event event__bg01">
+        <div class="container" data-aos="zoom-in-down">
+          <div class="event_text">
+            <h2>Marcos matias</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos
+              quo sequi sunt, perferendis illum omnis! Molestias perspiciatis,
+              dolor officiis fugit ratione, aperiam rem praesentium ad, quas vel
+              aut amet.
+            </p>
+          </div>
+          <img src="/286881.edbc77e1.jpg" width="360px">
+        </div>
+      </section>
+
+      <section class="event event__bg02">
+        <div class="container" data-aos="zoom-in-down">
+          <img src="/286881.edbc77e1.jpg" width="360px">
+          <div class="event_text">
+            <h2>HAPPY BIRTHDAY xx/xx/xxxx</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos
+              quo sequi sunt, perferendis illum omnis! Molestias perspiciatis,
+              dolor officiis fugit ratione, aperiam rem praesentium ad, quas vel
+              aut amet.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
+var aniversario = new Date("08/20/2023 00:00:01");
+const timeStampDoEvent = aniversario.getTime();
+var timeSetInterval = setInterval(()=>{
+    const agora = new Date();
+    const timeStamp = agora.getTime();
+    const distaciaEvent = timeStampDoEvent - timeStamp;
+    const dia = Math.floor(distaciaEvent / 86400000);
+    const horas = Math.floor(distaciaEvent % 86400000 / 3600000);
+    const min = Math.floor(distaciaEvent % 3600000 / 60000);
+    const seg = Math.floor(60);
+    document.getElementById("time").innerHTML = `${dia}D ${horas}:${min}:${seg}H`;
+    co;
+}, 1000);
+
+</script>
+  <script src="/Land_Eventos.59712999.js"></script></body>
+</html>
